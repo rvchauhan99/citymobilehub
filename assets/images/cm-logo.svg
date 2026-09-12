@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="gearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5a623"/>
+      <stop offset="100%" style="stop-color:#ffd675"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Gear outer -->
+  <path d="M100 15 L112 35 L135 28 L138 52 L160 55 L152 78 L172 92 L155 108 L168 128 L145 132 L148 155 L125 150 L115 172 L100 155 L85 172 L75 150 L52 155 L55 132 L32 128 L45 108 L28 92 L48 78 L40 55 L62 52 L65 28 L88 35 Z" 
+        fill="url(#gearGrad)" filter="url(#glow)" opacity="0.9"/>
+  <!-- Inner circle -->
+  <circle cx="100" cy="100" r="45" fill="#0a0a0f" stroke="url(#gearGrad)" stroke-width="3"/>
+  <!-- Phone icon -->
+  <rect x="82" y="68" width="36" height="64" rx="6" fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+  <line x1="94" y1="124" x2="106" y2="124" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Signal waves -->
+  <path d="M122 75 C128 72 132 76 130 82" stroke="url(#goldGrad)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M126 68 C136 64 142 72 138 82" stroke="url(#goldGrad)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <!-- CM Text -->
+  <text x="100" y="108" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="26" fill="url(#goldGrad)">CM</text>
+</svg>
